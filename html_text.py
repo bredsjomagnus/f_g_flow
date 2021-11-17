@@ -1,11 +1,16 @@
 HTML_TEXT_1 = """
 <html >
-
 <body >
+<h3>FLÖDESDIAGRAM</h3>
 <script type = "text/javascript" src = "https://www.gstatic.com/charts/loader.js" > </script >
 
-<div id = "sankey_multiple" style = "width: 900px; height: 300px;" > </div >
+<div id = "sankey_multiple" style = "width: 900px;" > </div >
+<div style="width: 100%;">
+"""
 
+HTML_TEXT_2 = """
+
+</div>
 <script type = "text/javascript" >
 google.charts.load("current", {packages: ["sankey"]})
 google.charts.setOnLoadCallback(drawChart)
@@ -16,7 +21,7 @@ function drawChart() {
     data.addColumn('number', 'Weight')
     data.addRows(["""
        
-HTML_TEXT_2 = """    ])
+HTML_TEXT_3 = """    ])
 
     var red = '#e81717'
     var green = '#26dc21'
